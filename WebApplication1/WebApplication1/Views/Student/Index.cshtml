@@ -1,0 +1,9 @@
+﻿@using WebApplication1.Models;
+@model List<Students>;
+
+<ul>
+    @foreach (Students std in @Model)
+    {
+        <li> @std.Id - @std.Name  @std.Surname </li>
+    }
+</ul>

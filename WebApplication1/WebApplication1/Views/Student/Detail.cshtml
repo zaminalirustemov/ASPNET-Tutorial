@@ -1,0 +1,14 @@
+﻿@using WebApplication1.Models;
+@model Students;
+
+<ul>
+    @if (Model is not null)
+    {
+        <li>@Model.Id - @Model.Name @Model.Surname</li>
+    }
+    else
+    {
+        <h1>Axtardiginiz ID sahibi tele yoxdur.</h1>
+    }
+    
+</ul>

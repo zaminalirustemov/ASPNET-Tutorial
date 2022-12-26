@@ -1,0 +1,16 @@
+﻿@model int;
+
+@{
+    int number = (int)ViewData["Data number"];
+    int number2 = ViewBag.Number;
+    int number3 = (int)TempData["Temp number"];
+}
+
+<h1>This is INDEX page</h1>
+<p>Model number: @Model</p>
+<hr>
+<p>ViewData number: @number</p>
+<hr>
+<p>ViewBag number: @number2</p>
+<hr>
+<p>TempData number: @number3</p>
